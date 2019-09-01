@@ -6,13 +6,15 @@ package com.aby.fsd.handson.controller;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author abrahammilton
  *
  */
 
-@SpringBootApplication(scanBasePackages={"com.aby.fsd.handson.service"})
+@ComponentScan("com.aby.fsd.handson.service")
+@SpringBootApplication
 public class Application {
 
 	/**
@@ -22,7 +24,7 @@ public class Application {
 		// TODO Auto-generated method stub
 		
 		ApplicationContext ctx = SpringApplication.run(Application.class, args);
-
+		
 	}
 
 }

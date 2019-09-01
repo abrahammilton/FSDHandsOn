@@ -17,9 +17,10 @@ public class UserController {
 	@Autowired
 	private CRUDService svc;
 	
-	@RequestMapping("/user")
+	@GetMapping("/user")
 	public String welcomeUser() {
 		return svc.welcomeUser();
+		//return "Welcome";
 	}
 
 	@GetMapping("/user/get/{userId}")
