@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
  *
  */
 
-@ComponentScan("com.aby.fsd.handson.service")
+@ComponentScan("com.aby.fsd.handson")
 @SpringBootApplication
 public class Application {
 
