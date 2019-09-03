@@ -1,4 +1,4 @@
-package com.aby.fsd.handson.controller;
+package com.aby.fsd.handson.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.aby.fsd.handson.service.CRUDService;
+import com.aby.fsd.handson.domain.CRUDService;
 
 @RestController
 public class UserController {
@@ -18,8 +18,8 @@ public class UserController {
 	
 	@GetMapping("/user")
 	public String welcomeUser() {
-		return svc.welcomeUser();
-		//return "Welcome";
+		//return svc.welcomeUser();
+		return "Welcome";
 	}
 
 	@GetMapping("/user/get/{userId}")
